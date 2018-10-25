@@ -48,21 +48,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT_kc(
   //,----+----+----+----+----+----+----.     ,----+----+----+----+----+----+----.
-     TAB , Q  , W  , E  , R  , T  , F12,      PGUP,  Y , U  , I  , O  , P  ,BSPC,
+     TAB , Q  , W  , E  , R  , T  , ESC,      PGUP,  Y , U  , I  , O  , P  ,BSPC,
   //|----+----+----+----+----+----+----|     |----+----+----+----+---+----+----|
      LSPO, A  , S  , D  , F  , G  , F5 ,    PGDOWN,  H , J  , K  , L  ,SCLN,RSPC,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
      LCTL, Z  , X  , C  , V  , B  , DEL,       INS,  N , M  ,COMM,DOT ,SLSH,RCTL ,
   //|----+----+----+----+----+----+----.     .----+----+----+----+----+----+----|
-    GRAVE,LGUI,LEFT,RIGHT,LOWR,ENT,                 SPC,RASE, UP ,DOWN,LGUI,LALT
+     PSCR,LGUI,LEFT,RIGHT,LOWR,ENT,                 SPC,RASE,UP ,DOWN,LGUI,LALT
   //`----+----+----+--+-+----/----/               \----\----+----+----+----+----'
   ),
 
   [_LOWER] = LAYOUT_kc(
     //,----+----+----+----+----+----+----.     ,----+----+----+----+----+----+----.
-      GRAVE,EXLM, AT ,LCBR,RCBR, 5  , A,         NO , END, 7  , 8  , 9  , 0  ,DEL,
+        NO ,EXLM, AT ,LCBR,RCBR,GRAVE,NO ,       NO , END, 7  , 8  , 9  , NO ,NO,
     //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-       MINS,HASH, DLR,ASTR,EQUAL,PIPE, NO,       NO, HOME, 4  , 5  , 6  ,RBRC,BSLS,
+       MINS,HASH, DLR,ASTR,EQUAL,PIPE, NO,       NO, HOME, 4  , 5  , 6  , NO ,UNDS,
     //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
         NO ,PERC,CIRC,LBRC,RBRC,TILD, NO ,      MUTE,AMPR, 1  , 2  , 3  ,BSLS,ENT ,
     //|----+----+----+----+----+----+----.     .----+----+----+----+----+----+----|
@@ -72,11 +72,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_kc(
     //,----+----+----+----+----+----+----.     ,----+----+----+----+----+----+----.
-      GRAVE,EXLM, AT ,LCBR,RCBR, NO ,  NO,       NO ,  6  , 7  , 8  , 9  , 0  ,BSPC,
+        NO ,EXLM, AT ,LCBR,RCBR,GRAVE, NO,       NO , NO , F7 , F8 , F9 , F10,BSPC,
     //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-       MINS,HASH, DLR,ASTR,EQUAL,PIPE, NO,        D,  Y  , U  , I  , O  , P  ,DEL ,
+       MINS,HASH, DLR,ASTR,EQUAL,PIPE, NO,        D,  Y  , F4 , F5 , F6 , F11,DEL ,
     //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-        NO ,PERC,CIRC,LBRC,RBRC,TILD, NO ,      SPC,  N  , M  ,COMM,DOT ,SLSH,ENT ,
+        NO ,PERC,CIRC,LBRC,RBRC,TILD, NO ,      SPC,  N  , F1 , F2 , F3 , F12,ENT ,
     //|----+----+----+----+----+----+----.     .----+----+----+----+----+----+----|
         NO , NO , NO , NO , NO ,NO,                  SPC, RASE,LEFT, UP ,DOWN,RIGHT
     //`----+----+----+--+-+----/----/               \----\----+----+----+----+----'
